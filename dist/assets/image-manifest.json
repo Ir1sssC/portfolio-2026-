@@ -1,0 +1,2013 @@
+{
+  "version": 1,
+  "images": {
+    "afterimage.webp": {
+      "originalBytes": 70884,
+      "width": 510,
+      "height": 510,
+      "alpha": false,
+      "type": "image/webp",
+      "encoding": "original",
+      "src": "afterimage.webp",
+      "bytes": 70884,
+      "variants": [
+        {
+          "src": "afterimage.w360.webp",
+          "width": 360,
+          "bytes": 49552
+        },
+        {
+          "src": "afterimage.webp",
+          "width": 510,
+          "bytes": 70884
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "iris-badge.webp": {
+      "originalBytes": 91876,
+      "width": 1080,
+      "height": 720,
+      "alpha": false,
+      "type": "image/webp",
+      "encoding": "original",
+      "src": "iris-badge.webp",
+      "bytes": 91876,
+      "variants": [
+        {
+          "src": "iris-badge.w360.webp",
+          "width": 360,
+          "bytes": 27510
+        },
+        {
+          "src": "iris-badge.w640.webp",
+          "width": 640,
+          "bytes": 67542
+        },
+        {
+          "src": "iris-badge.webp",
+          "width": 1080,
+          "bytes": 91876
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "matter.webp": {
+      "originalBytes": 23404,
+      "width": 510,
+      "height": 510,
+      "alpha": false,
+      "type": "image/webp",
+      "encoding": "original",
+      "src": "matter.webp",
+      "bytes": 23404,
+      "variants": [
+        {
+          "src": "matter.webp",
+          "width": 510,
+          "bytes": 23404
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "photography/architectural-detail.webp": {
+      "originalBytes": 302812,
+      "width": 1700,
+      "height": 956,
+      "alpha": false,
+      "type": "image/webp",
+      "encoding": "original",
+      "src": "photography/architectural-detail.webp",
+      "bytes": 302812,
+      "variants": [
+        {
+          "src": "photography/architectural-detail.w360.webp",
+          "width": 360,
+          "bytes": 37466
+        },
+        {
+          "src": "photography/architectural-detail.w640.webp",
+          "width": 640,
+          "bytes": 103208
+        },
+        {
+          "src": "photography/architectural-detail.w960.webp",
+          "width": 960,
+          "bytes": 201938
+        },
+        {
+          "src": "photography/architectural-detail.webp",
+          "width": 1700,
+          "bytes": 302812
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "photography/brick-facade.webp": {
+      "originalBytes": 205682,
+      "width": 1700,
+      "height": 956,
+      "alpha": false,
+      "type": "image/webp",
+      "encoding": "original",
+      "src": "photography/brick-facade.webp",
+      "bytes": 205682,
+      "variants": [
+        {
+          "src": "photography/brick-facade.w360.webp",
+          "width": 360,
+          "bytes": 32144
+        },
+        {
+          "src": "photography/brick-facade.w640.webp",
+          "width": 640,
+          "bytes": 87668
+        },
+        {
+          "src": "photography/brick-facade.w960.webp",
+          "width": 960,
+          "bytes": 165838
+        },
+        {
+          "src": "photography/brick-facade.webp",
+          "width": 1700,
+          "bytes": 205682
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "photography/bus-and-crosswalk.webp": {
+      "originalBytes": 236832,
+      "width": 1700,
+      "height": 957,
+      "alpha": false,
+      "type": "image/webp",
+      "encoding": "original",
+      "src": "photography/bus-and-crosswalk.webp",
+      "bytes": 236832,
+      "variants": [
+        {
+          "src": "photography/bus-and-crosswalk.w360.webp",
+          "width": 360,
+          "bytes": 27986
+        },
+        {
+          "src": "photography/bus-and-crosswalk.w640.webp",
+          "width": 640,
+          "bytes": 76018
+        },
+        {
+          "src": "photography/bus-and-crosswalk.w960.webp",
+          "width": 960,
+          "bytes": 155780
+        },
+        {
+          "src": "photography/bus-and-crosswalk.webp",
+          "width": 1700,
+          "bytes": 236832
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "photography/flag-and-sky.webp": {
+      "originalBytes": 171918,
+      "width": 990,
+      "height": 1760,
+      "alpha": false,
+      "type": "image/webp",
+      "encoding": "original",
+      "src": "photography/flag-and-sky.webp",
+      "bytes": 171918,
+      "variants": [
+        {
+          "src": "photography/flag-and-sky.w360.webp",
+          "width": 360,
+          "bytes": 59492
+        },
+        {
+          "src": "photography/flag-and-sky.w640.webp",
+          "width": 640,
+          "bytes": 150982
+        },
+        {
+          "src": "photography/flag-and-sky.webp",
+          "width": 990,
+          "bytes": 171918
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "photography/street-and-gate.webp": {
+      "originalBytes": 189304,
+      "width": 1700,
+      "height": 956,
+      "alpha": false,
+      "type": "image/webp",
+      "encoding": "original",
+      "src": "photography/street-and-gate.webp",
+      "bytes": 189304,
+      "variants": [
+        {
+          "src": "photography/street-and-gate.w360.webp",
+          "width": 360,
+          "bytes": 26752
+        },
+        {
+          "src": "photography/street-and-gate.w640.webp",
+          "width": 640,
+          "bytes": 71324
+        },
+        {
+          "src": "photography/street-and-gate.w960.webp",
+          "width": 960,
+          "bytes": 137458
+        },
+        {
+          "src": "photography/street-and-gate.webp",
+          "width": 1700,
+          "bytes": 189304
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "projects/campus-board-1.webp": {
+      "originalBytes": 645656,
+      "width": 2600,
+      "height": 3677,
+      "alpha": false,
+      "type": "image/webp",
+      "encoding": "original",
+      "src": "projects/campus-board-1.webp",
+      "bytes": 645656,
+      "variants": [
+        {
+          "src": "projects/campus-board-1.w360.webp",
+          "width": 360,
+          "bytes": 60808
+        },
+        {
+          "src": "projects/campus-board-1.w640.webp",
+          "width": 640,
+          "bytes": 145332
+        },
+        {
+          "src": "projects/campus-board-1.w960.webp",
+          "width": 960,
+          "bytes": 263464
+        },
+        {
+          "src": "projects/campus-board-1.w1280.webp",
+          "width": 1280,
+          "bytes": 393282
+        },
+        {
+          "src": "projects/campus-board-1.webp",
+          "width": 2600,
+          "bytes": 645656
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "projects/campus-board-2.webp": {
+      "originalBytes": 526418,
+      "width": 2600,
+      "height": 3677,
+      "alpha": false,
+      "type": "image/webp",
+      "encoding": "original",
+      "src": "projects/campus-board-2.webp",
+      "bytes": 526418,
+      "variants": [
+        {
+          "src": "projects/campus-board-2.w360.webp",
+          "width": 360,
+          "bytes": 44572
+        },
+        {
+          "src": "projects/campus-board-2.w640.webp",
+          "width": 640,
+          "bytes": 107106
+        },
+        {
+          "src": "projects/campus-board-2.w960.webp",
+          "width": 960,
+          "bytes": 200450
+        },
+        {
+          "src": "projects/campus-board-2.w1280.webp",
+          "width": 1280,
+          "bytes": 302988
+        },
+        {
+          "src": "projects/campus-board-2.webp",
+          "width": 2600,
+          "bytes": 526418
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "projects/campus-board-3.webp": {
+      "originalBytes": 491436,
+      "width": 2600,
+      "height": 3677,
+      "alpha": false,
+      "type": "image/webp",
+      "encoding": "original",
+      "src": "projects/campus-board-3.webp",
+      "bytes": 491436,
+      "variants": [
+        {
+          "src": "projects/campus-board-3.w360.webp",
+          "width": 360,
+          "bytes": 44344
+        },
+        {
+          "src": "projects/campus-board-3.w640.webp",
+          "width": 640,
+          "bytes": 99594
+        },
+        {
+          "src": "projects/campus-board-3.w960.webp",
+          "width": 960,
+          "bytes": 175442
+        },
+        {
+          "src": "projects/campus-board-3.w1280.webp",
+          "width": 1280,
+          "bytes": 268598
+        },
+        {
+          "src": "projects/campus-board-3.w1920.webp",
+          "width": 1920,
+          "bytes": 471426
+        },
+        {
+          "src": "projects/campus-board-3.webp",
+          "width": 2600,
+          "bytes": 491436
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "projects/campus-cover.webp": {
+      "originalBytes": 258754,
+      "width": 1280,
+      "height": 1810,
+      "alpha": false,
+      "type": "image/webp",
+      "encoding": "original",
+      "src": "projects/campus-cover.webp",
+      "bytes": 258754,
+      "variants": [
+        {
+          "src": "projects/campus-cover.w360.webp",
+          "width": 360,
+          "bytes": 60444
+        },
+        {
+          "src": "projects/campus-cover.w640.webp",
+          "width": 640,
+          "bytes": 143748
+        },
+        {
+          "src": "projects/campus-cover.webp",
+          "width": 1280,
+          "bytes": 258754
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "projects/graphic/clio-01.webp": {
+      "originalBytes": 220696,
+      "width": 954,
+      "height": 3700,
+      "alpha": false,
+      "type": "image/webp",
+      "encoding": "original",
+      "src": "projects/graphic/clio-01.webp",
+      "bytes": 220696,
+      "variants": [
+        {
+          "src": "projects/graphic/clio-01.w360.webp",
+          "width": 360,
+          "bytes": 94684
+        },
+        {
+          "src": "projects/graphic/clio-01.w640.webp",
+          "width": 640,
+          "bytes": 219994
+        },
+        {
+          "src": "projects/graphic/clio-01.webp",
+          "width": 954,
+          "bytes": 220696
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "projects/graphic/clio-02.webp": {
+      "originalBytes": 392036,
+      "width": 1117,
+      "height": 3700,
+      "alpha": false,
+      "type": "image/webp",
+      "encoding": "original",
+      "src": "projects/graphic/clio-02.webp",
+      "bytes": 392036,
+      "variants": [
+        {
+          "src": "projects/graphic/clio-02.w360.webp",
+          "width": 360,
+          "bytes": 99620
+        },
+        {
+          "src": "projects/graphic/clio-02.w640.webp",
+          "width": 640,
+          "bytes": 262496
+        },
+        {
+          "src": "projects/graphic/clio-02.webp",
+          "width": 1117,
+          "bytes": 392036
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "projects/graphic/golden-01.webp": {
+      "originalBytes": 204432,
+      "width": 1024,
+      "height": 1536,
+      "alpha": false,
+      "type": "image/webp",
+      "encoding": "original",
+      "src": "projects/graphic/golden-01.webp",
+      "bytes": 204432,
+      "variants": [
+        {
+          "src": "projects/graphic/golden-01.w360.webp",
+          "width": 360,
+          "bytes": 65810
+        },
+        {
+          "src": "projects/graphic/golden-01.w640.webp",
+          "width": 640,
+          "bytes": 152112
+        },
+        {
+          "src": "projects/graphic/golden-01.webp",
+          "width": 1024,
+          "bytes": 204432
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "projects/graphic/golden-02.webp": {
+      "originalBytes": 214632,
+      "width": 941,
+      "height": 1672,
+      "alpha": false,
+      "type": "image/webp",
+      "encoding": "original",
+      "src": "projects/graphic/golden-02.webp",
+      "bytes": 214632,
+      "variants": [
+        {
+          "src": "projects/graphic/golden-02.w360.webp",
+          "width": 360,
+          "bytes": 74192
+        },
+        {
+          "src": "projects/graphic/golden-02.w640.webp",
+          "width": 640,
+          "bytes": 176154
+        },
+        {
+          "src": "projects/graphic/golden-02.webp",
+          "width": 941,
+          "bytes": 214632
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "projects/graphic/golden-03.webp": {
+      "originalBytes": 221512,
+      "width": 1024,
+      "height": 1536,
+      "alpha": false,
+      "type": "image/webp",
+      "encoding": "original",
+      "src": "projects/graphic/golden-03.webp",
+      "bytes": 221512,
+      "variants": [
+        {
+          "src": "projects/graphic/golden-03.w360.webp",
+          "width": 360,
+          "bytes": 67368
+        },
+        {
+          "src": "projects/graphic/golden-03.w640.webp",
+          "width": 640,
+          "bytes": 159890
+        },
+        {
+          "src": "projects/graphic/golden-03.webp",
+          "width": 1024,
+          "bytes": 221512
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "projects/graphic/packaging-01.webp": {
+      "originalBytes": 105140,
+      "width": 1920,
+      "height": 1440,
+      "alpha": false,
+      "type": "image/webp",
+      "encoding": "original",
+      "src": "projects/graphic/packaging-01.webp",
+      "bytes": 105140,
+      "variants": [
+        {
+          "src": "projects/graphic/packaging-01.w360.webp",
+          "width": 360,
+          "bytes": 18792
+        },
+        {
+          "src": "projects/graphic/packaging-01.w640.webp",
+          "width": 640,
+          "bytes": 41328
+        },
+        {
+          "src": "projects/graphic/packaging-01.w960.webp",
+          "width": 960,
+          "bytes": 68532
+        },
+        {
+          "src": "projects/graphic/packaging-01.w1280.webp",
+          "width": 1280,
+          "bytes": 98244
+        },
+        {
+          "src": "projects/graphic/packaging-01.webp",
+          "width": 1920,
+          "bytes": 105140
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "projects/graphic/packaging-02.webp": {
+      "originalBytes": 190984,
+      "width": 1920,
+      "height": 1281,
+      "alpha": false,
+      "type": "image/webp",
+      "encoding": "original",
+      "src": "projects/graphic/packaging-02.webp",
+      "bytes": 190984,
+      "variants": [
+        {
+          "src": "projects/graphic/packaging-02.w360.webp",
+          "width": 360,
+          "bytes": 15754
+        },
+        {
+          "src": "projects/graphic/packaging-02.w640.webp",
+          "width": 640,
+          "bytes": 43248
+        },
+        {
+          "src": "projects/graphic/packaging-02.w960.webp",
+          "width": 960,
+          "bytes": 89410
+        },
+        {
+          "src": "projects/graphic/packaging-02.w1280.webp",
+          "width": 1280,
+          "bytes": 145470
+        },
+        {
+          "src": "projects/graphic/packaging-02.webp",
+          "width": 1920,
+          "bytes": 190984
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "projects/graphic/valorant-01.webp": {
+      "originalBytes": 10084,
+      "width": 250,
+      "height": 283,
+      "alpha": false,
+      "type": "image/webp",
+      "encoding": "original",
+      "src": "projects/graphic/valorant-01.webp",
+      "bytes": 10084,
+      "variants": [
+        {
+          "src": "projects/graphic/valorant-01.webp",
+          "width": 250,
+          "bytes": 10084
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "projects/graphic/valorant-02.webp": {
+      "originalBytes": 17170,
+      "width": 265,
+      "height": 854,
+      "alpha": false,
+      "type": "image/webp",
+      "encoding": "original",
+      "src": "projects/graphic/valorant-02.webp",
+      "bytes": 17170,
+      "variants": [
+        {
+          "src": "projects/graphic/valorant-02.webp",
+          "width": 265,
+          "bytes": 17170
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "projects/graphic/valorant-03.webp": {
+      "originalBytes": 36764,
+      "width": 631,
+      "height": 854,
+      "alpha": false,
+      "type": "image/webp",
+      "encoding": "original",
+      "src": "projects/graphic/valorant-03.webp",
+      "bytes": 36764,
+      "variants": [
+        {
+          "src": "projects/graphic/valorant-03.w360.webp",
+          "width": 360,
+          "bytes": 24906
+        },
+        {
+          "src": "projects/graphic/valorant-03.webp",
+          "width": 631,
+          "bytes": 36764
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "projects/graphic/valorant-04.webp": {
+      "originalBytes": 27788,
+      "width": 305,
+      "height": 854,
+      "alpha": false,
+      "type": "image/webp",
+      "encoding": "original",
+      "src": "projects/graphic/valorant-04.webp",
+      "bytes": 27788,
+      "variants": [
+        {
+          "src": "projects/graphic/valorant-04.webp",
+          "width": 305,
+          "bytes": 27788
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "projects/motion/cosmetics-cream.webp": {
+      "originalBytes": 66398,
+      "width": 1280,
+      "height": 1280,
+      "alpha": false,
+      "type": "image/webp",
+      "encoding": "original",
+      "src": "projects/motion/cosmetics-cream.webp",
+      "bytes": 66398,
+      "variants": [
+        {
+          "src": "projects/motion/cosmetics-cream.w360.webp",
+          "width": 360,
+          "bytes": 19068
+        },
+        {
+          "src": "projects/motion/cosmetics-cream.w640.webp",
+          "width": 640,
+          "bytes": 42200
+        },
+        {
+          "src": "projects/motion/cosmetics-cream.webp",
+          "width": 1280,
+          "bytes": 66398
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "projects/motion/cosmetics-foundation.webp": {
+      "originalBytes": 63960,
+      "width": 1280,
+      "height": 1707,
+      "alpha": false,
+      "type": "image/webp",
+      "encoding": "original",
+      "src": "projects/motion/cosmetics-foundation.webp",
+      "bytes": 63960,
+      "variants": [
+        {
+          "src": "projects/motion/cosmetics-foundation.w360.webp",
+          "width": 360,
+          "bytes": 21986
+        },
+        {
+          "src": "projects/motion/cosmetics-foundation.w640.webp",
+          "width": 640,
+          "bytes": 46790
+        },
+        {
+          "src": "projects/motion/cosmetics-foundation.webp",
+          "width": 1280,
+          "bytes": 63960
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "projects/motion/cosmetics-lipstick.webp": {
+      "originalBytes": 116372,
+      "width": 1320,
+      "height": 1760,
+      "alpha": false,
+      "type": "image/webp",
+      "encoding": "original",
+      "src": "projects/motion/cosmetics-lipstick.webp",
+      "bytes": 116372,
+      "variants": [
+        {
+          "src": "projects/motion/cosmetics-lipstick.w360.webp",
+          "width": 360,
+          "bytes": 25608
+        },
+        {
+          "src": "projects/motion/cosmetics-lipstick.w640.webp",
+          "width": 640,
+          "bytes": 67418
+        },
+        {
+          "src": "projects/motion/cosmetics-lipstick.webp",
+          "width": 1320,
+          "bytes": 116372
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "projects/motion/falling-blossoms-poster.webp": {
+      "originalBytes": 271062,
+      "width": 1280,
+      "height": 720,
+      "alpha": false,
+      "type": "image/webp",
+      "encoding": "original",
+      "src": "projects/motion/falling-blossoms-poster.webp",
+      "bytes": 271062,
+      "variants": [
+        {
+          "src": "projects/motion/falling-blossoms-poster.w360.webp",
+          "width": 360,
+          "bytes": 44606
+        },
+        {
+          "src": "projects/motion/falling-blossoms-poster.w640.webp",
+          "width": 640,
+          "bytes": 126652
+        },
+        {
+          "src": "projects/motion/falling-blossoms-poster.w960.webp",
+          "width": 960,
+          "bytes": 257064
+        },
+        {
+          "src": "projects/motion/falling-blossoms-poster.webp",
+          "width": 1280,
+          "bytes": 271062
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "projects/motion/loft-interior.webp": {
+      "originalBytes": 96170,
+      "width": 1700,
+      "height": 1133,
+      "alpha": false,
+      "type": "image/webp",
+      "encoding": "original",
+      "src": "projects/motion/loft-interior.webp",
+      "bytes": 96170,
+      "variants": [
+        {
+          "src": "projects/motion/loft-interior.w360.webp",
+          "width": 360,
+          "bytes": 14726
+        },
+        {
+          "src": "projects/motion/loft-interior.w640.webp",
+          "width": 640,
+          "bytes": 36718
+        },
+        {
+          "src": "projects/motion/loft-interior.w960.webp",
+          "width": 960,
+          "bytes": 71922
+        },
+        {
+          "src": "projects/motion/loft-interior.webp",
+          "width": 1700,
+          "bytes": 96170
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "projects/motion/mountain-drive-poster.webp": {
+      "originalBytes": 51452,
+      "width": 800,
+      "height": 600,
+      "alpha": false,
+      "type": "image/webp",
+      "encoding": "original",
+      "src": "projects/motion/mountain-drive-poster.webp",
+      "bytes": 51452,
+      "variants": [
+        {
+          "src": "projects/motion/mountain-drive-poster.w360.webp",
+          "width": 360,
+          "bytes": 32234
+        },
+        {
+          "src": "projects/motion/mountain-drive-poster.webp",
+          "width": 800,
+          "bytes": 51452
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "projects/motion/water-ripples-poster.webp": {
+      "originalBytes": 117180,
+      "width": 968,
+      "height": 544,
+      "alpha": false,
+      "type": "image/webp",
+      "encoding": "original",
+      "src": "projects/motion/water-ripples-poster.webp",
+      "bytes": 117180,
+      "variants": [
+        {
+          "src": "projects/motion/water-ripples-poster.w360.webp",
+          "width": 360,
+          "bytes": 40736
+        },
+        {
+          "src": "projects/motion/water-ripples-poster.w640.webp",
+          "width": 640,
+          "bytes": 107568
+        },
+        {
+          "src": "projects/motion/water-ripples-poster.webp",
+          "width": 968,
+          "bytes": 117180
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "projects/niteoff-cover.webp": {
+      "originalBytes": 90564,
+      "width": 1406,
+      "height": 774,
+      "alpha": false,
+      "type": "image/webp",
+      "encoding": "original",
+      "src": "projects/niteoff-cover.webp",
+      "bytes": 90564,
+      "variants": [
+        {
+          "src": "projects/niteoff-cover.w360.webp",
+          "width": 360,
+          "bytes": 19686
+        },
+        {
+          "src": "projects/niteoff-cover.w640.webp",
+          "width": 640,
+          "bytes": 43282
+        },
+        {
+          "src": "projects/niteoff-cover.w960.webp",
+          "width": 960,
+          "bytes": 74440
+        },
+        {
+          "src": "projects/niteoff-cover.webp",
+          "width": 1406,
+          "bytes": 90564
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "projects/portfolio/campus-plus-phones-transparent.png": {
+      "originalBytes": 1174880,
+      "width": 1122,
+      "height": 1402,
+      "alpha": true,
+      "type": "image/webp",
+      "encoding": "webp high quality",
+      "src": "projects/portfolio/campus-plus-phones-transparent.optimized.webp",
+      "bytes": 225740,
+      "variants": [
+        {
+          "src": "projects/portfolio/campus-plus-phones-transparent.w360.webp",
+          "width": 360,
+          "bytes": 42672
+        },
+        {
+          "src": "projects/portfolio/campus-plus-phones-transparent.w640.webp",
+          "width": 640,
+          "bytes": 98194
+        },
+        {
+          "src": "projects/portfolio/campus-plus-phones-transparent.w960.webp",
+          "width": 960,
+          "bytes": 183320
+        },
+        {
+          "src": "projects/portfolio/campus-plus-phones-transparent.optimized.webp",
+          "width": 1122,
+          "bytes": 225740
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "projects/portfolio/campus-project-board.jpg": {
+      "originalBytes": 4635088,
+      "width": 3508,
+      "height": 4961,
+      "alpha": false,
+      "type": "image/webp",
+      "encoding": "webp high quality",
+      "src": "projects/portfolio/campus-project-board.optimized.webp",
+      "bytes": 1415228,
+      "variants": [
+        {
+          "src": "projects/portfolio/campus-project-board.w360.webp",
+          "width": 360,
+          "bytes": 61272
+        },
+        {
+          "src": "projects/portfolio/campus-project-board.w640.webp",
+          "width": 640,
+          "bytes": 147358
+        },
+        {
+          "src": "projects/portfolio/campus-project-board.w960.webp",
+          "width": 960,
+          "bytes": 267956
+        },
+        {
+          "src": "projects/portfolio/campus-project-board.w1280.webp",
+          "width": 1280,
+          "bytes": 400610
+        },
+        {
+          "src": "projects/portfolio/campus-project-board.w1920.webp",
+          "width": 1920,
+          "bytes": 687622
+        },
+        {
+          "src": "projects/portfolio/campus-project-board.optimized.webp",
+          "width": 3508,
+          "bytes": 1415228
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "projects/portfolio/niteoff-devices-transparent.png": {
+      "originalBytes": 1236893,
+      "width": 1448,
+      "height": 1086,
+      "alpha": true,
+      "type": "image/webp",
+      "encoding": "webp high quality",
+      "src": "projects/portfolio/niteoff-devices-transparent.optimized.webp",
+      "bytes": 218442,
+      "variants": [
+        {
+          "src": "projects/portfolio/niteoff-devices-transparent.w360.webp",
+          "width": 360,
+          "bytes": 27772
+        },
+        {
+          "src": "projects/portfolio/niteoff-devices-transparent.w640.webp",
+          "width": 640,
+          "bytes": 66488
+        },
+        {
+          "src": "projects/portfolio/niteoff-devices-transparent.w960.webp",
+          "width": 960,
+          "bytes": 123124
+        },
+        {
+          "src": "projects/portfolio/niteoff-devices-transparent.w1280.webp",
+          "width": 1280,
+          "bytes": 187846
+        },
+        {
+          "src": "projects/portfolio/niteoff-devices-transparent.optimized.webp",
+          "width": 1448,
+          "bytes": 218442
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "projects/portfolio/smart-campus-cover.jpg": {
+      "originalBytes": 166351,
+      "width": 1280,
+      "height": 720,
+      "alpha": false,
+      "type": "image/webp",
+      "encoding": "webp high quality",
+      "src": "projects/portfolio/smart-campus-cover.optimized.webp",
+      "bytes": 161272,
+      "variants": [
+        {
+          "src": "projects/portfolio/smart-campus-cover.w360.webp",
+          "width": 360,
+          "bytes": 24182
+        },
+        {
+          "src": "projects/portfolio/smart-campus-cover.w640.webp",
+          "width": 640,
+          "bytes": 60992
+        },
+        {
+          "src": "projects/portfolio/smart-campus-cover.w960.webp",
+          "width": 960,
+          "bytes": 110918
+        },
+        {
+          "src": "projects/portfolio/smart-campus-cover.optimized.webp",
+          "width": 1280,
+          "bytes": 161272
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "projects/portfolio/zhoubi-liangzhu-yucong.jpg": {
+      "originalBytes": 2467471,
+      "width": 1448,
+      "height": 2048,
+      "alpha": false,
+      "type": "image/avif",
+      "encoding": "avif high quality",
+      "src": "projects/portfolio/zhoubi-liangzhu-yucong.optimized.avif",
+      "bytes": 2200261,
+      "variants": [
+        {
+          "src": "projects/portfolio/zhoubi-liangzhu-yucong.w360.avif",
+          "width": 360,
+          "bytes": 110132
+        },
+        {
+          "src": "projects/portfolio/zhoubi-liangzhu-yucong.w640.avif",
+          "width": 640,
+          "bytes": 405456
+        },
+        {
+          "src": "projects/portfolio/zhoubi-liangzhu-yucong.w960.avif",
+          "width": 960,
+          "bytes": 950365
+        },
+        {
+          "src": "projects/portfolio/zhoubi-liangzhu-yucong.w1280.avif",
+          "width": 1280,
+          "bytes": 1697664
+        },
+        {
+          "src": "projects/portfolio/zhoubi-liangzhu-yucong.optimized.avif",
+          "width": 1448,
+          "bytes": 2200261
+        }
+      ],
+      "fallbackVariants": [
+        {
+          "src": "projects/portfolio/zhoubi-liangzhu-yucong.fallback-w360.jpg",
+          "width": 360,
+          "bytes": 242089
+        },
+        {
+          "src": "projects/portfolio/zhoubi-liangzhu-yucong.fallback-w640.jpg",
+          "width": 640,
+          "bytes": 971571
+        },
+        {
+          "src": "projects/portfolio/zhoubi-liangzhu-yucong.fallback-w960.jpg",
+          "width": 960,
+          "bytes": 2064327
+        },
+        {
+          "src": "projects/portfolio/zhoubi-liangzhu-yucong.fallback-w1280.jpg",
+          "width": 1280,
+          "bytes": 3393700
+        },
+        {
+          "src": "projects/portfolio/zhoubi-liangzhu-yucong.jpg",
+          "width": 1448,
+          "bytes": 2467471
+        }
+      ]
+    },
+    "projects/portfolio/zhoubi-qiheng-siji.jpg": {
+      "originalBytes": 1150054,
+      "width": 1448,
+      "height": 2048,
+      "alpha": false,
+      "type": "image/avif",
+      "encoding": "avif high quality",
+      "src": "projects/portfolio/zhoubi-qiheng-siji.optimized.avif",
+      "bytes": 888116,
+      "variants": [
+        {
+          "src": "projects/portfolio/zhoubi-qiheng-siji.w360.avif",
+          "width": 360,
+          "bytes": 79501
+        },
+        {
+          "src": "projects/portfolio/zhoubi-qiheng-siji.w640.avif",
+          "width": 640,
+          "bytes": 231252
+        },
+        {
+          "src": "projects/portfolio/zhoubi-qiheng-siji.w960.avif",
+          "width": 960,
+          "bytes": 454494
+        },
+        {
+          "src": "projects/portfolio/zhoubi-qiheng-siji.w1280.avif",
+          "width": 1280,
+          "bytes": 716312
+        },
+        {
+          "src": "projects/portfolio/zhoubi-qiheng-siji.optimized.avif",
+          "width": 1448,
+          "bytes": 888116
+        }
+      ],
+      "fallbackVariants": [
+        {
+          "src": "projects/portfolio/zhoubi-qiheng-siji.fallback-w360.jpg",
+          "width": 360,
+          "bytes": 180895
+        },
+        {
+          "src": "projects/portfolio/zhoubi-qiheng-siji.fallback-w640.jpg",
+          "width": 640,
+          "bytes": 514073
+        },
+        {
+          "src": "projects/portfolio/zhoubi-qiheng-siji.fallback-w960.jpg",
+          "width": 960,
+          "bytes": 1016655
+        },
+        {
+          "src": "projects/portfolio/zhoubi-qiheng-siji.fallback-w1280.jpg",
+          "width": 1280,
+          "bytes": 1603166
+        },
+        {
+          "src": "projects/portfolio/zhoubi-qiheng-siji.jpg",
+          "width": 1448,
+          "bytes": 1150054
+        }
+      ]
+    },
+    "projects/portfolio/zhoubi-ridao-cesuan.jpg": {
+      "originalBytes": 1971486,
+      "width": 1448,
+      "height": 2048,
+      "alpha": false,
+      "type": "image/avif",
+      "encoding": "avif high quality",
+      "src": "projects/portfolio/zhoubi-ridao-cesuan.optimized.avif",
+      "bytes": 1617040,
+      "variants": [
+        {
+          "src": "projects/portfolio/zhoubi-ridao-cesuan.w360.avif",
+          "width": 360,
+          "bytes": 84835
+        },
+        {
+          "src": "projects/portfolio/zhoubi-ridao-cesuan.w640.avif",
+          "width": 640,
+          "bytes": 286817
+        },
+        {
+          "src": "projects/portfolio/zhoubi-ridao-cesuan.w960.avif",
+          "width": 960,
+          "bytes": 693133
+        },
+        {
+          "src": "projects/portfolio/zhoubi-ridao-cesuan.w1280.avif",
+          "width": 1280,
+          "bytes": 1197889
+        },
+        {
+          "src": "projects/portfolio/zhoubi-ridao-cesuan.optimized.avif",
+          "width": 1448,
+          "bytes": 1617040
+        }
+      ],
+      "fallbackVariants": [
+        {
+          "src": "projects/portfolio/zhoubi-ridao-cesuan.fallback-w360.jpg",
+          "width": 360,
+          "bytes": 205808
+        },
+        {
+          "src": "projects/portfolio/zhoubi-ridao-cesuan.fallback-w640.jpg",
+          "width": 640,
+          "bytes": 672701
+        },
+        {
+          "src": "projects/portfolio/zhoubi-ridao-cesuan.fallback-w960.jpg",
+          "width": 960,
+          "bytes": 1576406
+        },
+        {
+          "src": "projects/portfolio/zhoubi-ridao-cesuan.fallback-w1280.jpg",
+          "width": 1280,
+          "bytes": 2650122
+        },
+        {
+          "src": "projects/portfolio/zhoubi-ridao-cesuan.jpg",
+          "width": 1448,
+          "bytes": 1971486
+        }
+      ]
+    },
+    "projects/portfolio/zhoubi-xingsu-zhoudu.jpg": {
+      "originalBytes": 1829287,
+      "width": 1448,
+      "height": 2048,
+      "alpha": false,
+      "type": "image/avif",
+      "encoding": "avif high quality",
+      "src": "projects/portfolio/zhoubi-xingsu-zhoudu.optimized.avif",
+      "bytes": 1504798,
+      "variants": [
+        {
+          "src": "projects/portfolio/zhoubi-xingsu-zhoudu.w360.avif",
+          "width": 360,
+          "bytes": 92035
+        },
+        {
+          "src": "projects/portfolio/zhoubi-xingsu-zhoudu.w640.avif",
+          "width": 640,
+          "bytes": 349364
+        },
+        {
+          "src": "projects/portfolio/zhoubi-xingsu-zhoudu.w960.avif",
+          "width": 960,
+          "bytes": 730667
+        },
+        {
+          "src": "projects/portfolio/zhoubi-xingsu-zhoudu.w1280.avif",
+          "width": 1280,
+          "bytes": 1200827
+        },
+        {
+          "src": "projects/portfolio/zhoubi-xingsu-zhoudu.optimized.avif",
+          "width": 1448,
+          "bytes": 1504798
+        }
+      ],
+      "fallbackVariants": [
+        {
+          "src": "projects/portfolio/zhoubi-xingsu-zhoudu.fallback-w360.jpg",
+          "width": 360,
+          "bytes": 213628
+        },
+        {
+          "src": "projects/portfolio/zhoubi-xingsu-zhoudu.fallback-w640.jpg",
+          "width": 640,
+          "bytes": 757971
+        },
+        {
+          "src": "projects/portfolio/zhoubi-xingsu-zhoudu.fallback-w960.jpg",
+          "width": 960,
+          "bytes": 1519148
+        },
+        {
+          "src": "projects/portfolio/zhoubi-xingsu-zhoudu.fallback-w1280.jpg",
+          "width": 1280,
+          "bytes": 2432940
+        },
+        {
+          "src": "projects/portfolio/zhoubi-xingsu-zhoudu.jpg",
+          "width": 1448,
+          "bytes": 1829287
+        }
+      ]
+    },
+    "projects/portfolio/zhoubi-yingxian-pagoda.jpg": {
+      "originalBytes": 2000817,
+      "width": 1448,
+      "height": 2048,
+      "alpha": false,
+      "type": "image/avif",
+      "encoding": "avif high quality",
+      "src": "projects/portfolio/zhoubi-yingxian-pagoda.optimized.avif",
+      "bytes": 1646093,
+      "variants": [
+        {
+          "src": "projects/portfolio/zhoubi-yingxian-pagoda.w360.avif",
+          "width": 360,
+          "bytes": 89692
+        },
+        {
+          "src": "projects/portfolio/zhoubi-yingxian-pagoda.w640.avif",
+          "width": 640,
+          "bytes": 364865
+        },
+        {
+          "src": "projects/portfolio/zhoubi-yingxian-pagoda.w960.avif",
+          "width": 960,
+          "bytes": 778595
+        },
+        {
+          "src": "projects/portfolio/zhoubi-yingxian-pagoda.w1280.avif",
+          "width": 1280,
+          "bytes": 1281274
+        },
+        {
+          "src": "projects/portfolio/zhoubi-yingxian-pagoda.optimized.avif",
+          "width": 1448,
+          "bytes": 1646093
+        }
+      ],
+      "fallbackVariants": [
+        {
+          "src": "projects/portfolio/zhoubi-yingxian-pagoda.fallback-w360.jpg",
+          "width": 360,
+          "bytes": 216448
+        },
+        {
+          "src": "projects/portfolio/zhoubi-yingxian-pagoda.fallback-w640.jpg",
+          "width": 640,
+          "bytes": 805062
+        },
+        {
+          "src": "projects/portfolio/zhoubi-yingxian-pagoda.fallback-w960.jpg",
+          "width": 960,
+          "bytes": 1627165
+        },
+        {
+          "src": "projects/portfolio/zhoubi-yingxian-pagoda.fallback-w1280.jpg",
+          "width": 1280,
+          "bytes": 2616646
+        },
+        {
+          "src": "projects/portfolio/zhoubi-yingxian-pagoda.jpg",
+          "width": 1448,
+          "bytes": 2000817
+        }
+      ]
+    },
+    "projects/roomieboard/roomieboard-collaboration.png": {
+      "originalBytes": 63408,
+      "width": 761,
+      "height": 626,
+      "alpha": false,
+      "type": "image/webp",
+      "encoding": "lossless",
+      "src": "projects/roomieboard/roomieboard-collaboration.optimized.webp",
+      "bytes": 34404,
+      "variants": [
+        {
+          "src": "projects/roomieboard/roomieboard-collaboration.w360.webp",
+          "width": 360,
+          "bytes": 30100
+        },
+        {
+          "src": "projects/roomieboard/roomieboard-collaboration.optimized.webp",
+          "width": 761,
+          "bytes": 34404
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "projects/roomieboard/roomieboard-overview.png": {
+      "originalBytes": 770848,
+      "width": 1440,
+      "height": 1000,
+      "alpha": false,
+      "type": "image/webp",
+      "encoding": "webp high quality",
+      "src": "projects/roomieboard/roomieboard-overview.optimized.webp",
+      "bytes": 237804,
+      "variants": [
+        {
+          "src": "projects/roomieboard/roomieboard-overview.w360.webp",
+          "width": 360,
+          "bytes": 26540
+        },
+        {
+          "src": "projects/roomieboard/roomieboard-overview.w640.webp",
+          "width": 640,
+          "bytes": 67342
+        },
+        {
+          "src": "projects/roomieboard/roomieboard-overview.w960.webp",
+          "width": 960,
+          "bytes": 128052
+        },
+        {
+          "src": "projects/roomieboard/roomieboard-overview.w1280.webp",
+          "width": 1280,
+          "bytes": 197732
+        },
+        {
+          "src": "projects/roomieboard/roomieboard-overview.optimized.webp",
+          "width": 1440,
+          "bytes": 237804
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "projects/task1_valorant/stickers/01_rose.png": {
+      "originalBytes": 169957,
+      "width": 512,
+      "height": 512,
+      "alpha": true,
+      "type": "image/webp",
+      "encoding": "lossless",
+      "src": "projects/task1_valorant/stickers/01_rose.optimized.webp",
+      "bytes": 100112,
+      "variants": [
+        {
+          "src": "projects/task1_valorant/stickers/01_rose.w360.webp",
+          "width": 360,
+          "bytes": 64094
+        },
+        {
+          "src": "projects/task1_valorant/stickers/01_rose.optimized.webp",
+          "width": 512,
+          "bytes": 100112
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "projects/task1_valorant/stickers/02_joy.png": {
+      "originalBytes": 162683,
+      "width": 512,
+      "height": 512,
+      "alpha": true,
+      "type": "image/webp",
+      "encoding": "lossless",
+      "src": "projects/task1_valorant/stickers/02_joy.optimized.webp",
+      "bytes": 94630,
+      "variants": [
+        {
+          "src": "projects/task1_valorant/stickers/02_joy.w360.webp",
+          "width": 360,
+          "bytes": 61564
+        },
+        {
+          "src": "projects/task1_valorant/stickers/02_joy.optimized.webp",
+          "width": 512,
+          "bytes": 94630
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "projects/task1_valorant/stickers/03_green_hat.png": {
+      "originalBytes": 165002,
+      "width": 512,
+      "height": 512,
+      "alpha": true,
+      "type": "image/webp",
+      "encoding": "lossless",
+      "src": "projects/task1_valorant/stickers/03_green_hat.optimized.webp",
+      "bytes": 95532,
+      "variants": [
+        {
+          "src": "projects/task1_valorant/stickers/03_green_hat.w360.webp",
+          "width": 360,
+          "bytes": 62388
+        },
+        {
+          "src": "projects/task1_valorant/stickers/03_green_hat.optimized.webp",
+          "width": 512,
+          "bytes": 95532
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "projects/task1_valorant/stickers/04_surprised.png": {
+      "originalBytes": 164606,
+      "width": 512,
+      "height": 512,
+      "alpha": true,
+      "type": "image/webp",
+      "encoding": "lossless",
+      "src": "projects/task1_valorant/stickers/04_surprised.optimized.webp",
+      "bytes": 97420,
+      "variants": [
+        {
+          "src": "projects/task1_valorant/stickers/04_surprised.w360.webp",
+          "width": 360,
+          "bytes": 63450
+        },
+        {
+          "src": "projects/task1_valorant/stickers/04_surprised.optimized.webp",
+          "width": 512,
+          "bytes": 97420
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "projects/task1_valorant/stickers/05_blue_hair.png": {
+      "originalBytes": 183020,
+      "width": 512,
+      "height": 512,
+      "alpha": true,
+      "type": "image/webp",
+      "encoding": "lossless",
+      "src": "projects/task1_valorant/stickers/05_blue_hair.optimized.webp",
+      "bytes": 108564,
+      "variants": [
+        {
+          "src": "projects/task1_valorant/stickers/05_blue_hair.w360.webp",
+          "width": 360,
+          "bytes": 72320
+        },
+        {
+          "src": "projects/task1_valorant/stickers/05_blue_hair.optimized.webp",
+          "width": 512,
+          "bytes": 108564
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "projects/task1_valorant/stickers/06_crying.png": {
+      "originalBytes": 136472,
+      "width": 512,
+      "height": 512,
+      "alpha": true,
+      "type": "image/webp",
+      "encoding": "lossless",
+      "src": "projects/task1_valorant/stickers/06_crying.optimized.webp",
+      "bytes": 80474,
+      "variants": [
+        {
+          "src": "projects/task1_valorant/stickers/06_crying.w360.webp",
+          "width": 360,
+          "bytes": 50856
+        },
+        {
+          "src": "projects/task1_valorant/stickers/06_crying.optimized.webp",
+          "width": 512,
+          "bytes": 80474
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "projects/task1_valorant/stickers/07_yellow.png": {
+      "originalBytes": 153719,
+      "width": 512,
+      "height": 512,
+      "alpha": true,
+      "type": "image/webp",
+      "encoding": "lossless",
+      "src": "projects/task1_valorant/stickers/07_yellow.optimized.webp",
+      "bytes": 89008,
+      "variants": [
+        {
+          "src": "projects/task1_valorant/stickers/07_yellow.w360.webp",
+          "width": 360,
+          "bytes": 57382
+        },
+        {
+          "src": "projects/task1_valorant/stickers/07_yellow.optimized.webp",
+          "width": 512,
+          "bytes": 89008
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "projects/task1_valorant/stickers/08_confused.png": {
+      "originalBytes": 149817,
+      "width": 512,
+      "height": 512,
+      "alpha": true,
+      "type": "image/webp",
+      "encoding": "lossless",
+      "src": "projects/task1_valorant/stickers/08_confused.optimized.webp",
+      "bytes": 87796,
+      "variants": [
+        {
+          "src": "projects/task1_valorant/stickers/08_confused.w360.webp",
+          "width": 360,
+          "bytes": 58772
+        },
+        {
+          "src": "projects/task1_valorant/stickers/08_confused.optimized.webp",
+          "width": 512,
+          "bytes": 87796
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "projects/task1_valorant/valorant_character_cutout_from_reference.png": {
+      "originalBytes": 428075,
+      "width": 880,
+      "height": 1080,
+      "alpha": true,
+      "type": "image/webp",
+      "encoding": "lossless",
+      "src": "projects/task1_valorant/valorant_character_cutout_from_reference.optimized.webp",
+      "bytes": 267868,
+      "variants": [
+        {
+          "src": "projects/task1_valorant/valorant_character_cutout_from_reference.w360.webp",
+          "width": 360,
+          "bytes": 74590
+        },
+        {
+          "src": "projects/task1_valorant/valorant_character_cutout_from_reference.w640.webp",
+          "width": 640,
+          "bytes": 176960
+        },
+        {
+          "src": "projects/task1_valorant/valorant_character_cutout_from_reference.optimized.webp",
+          "width": 880,
+          "bytes": 267868
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "projects/task2_taxmind/taxmind-official-and-mini-program-qr.png": {
+      "originalBytes": 504197,
+      "width": 1280,
+      "height": 913,
+      "alpha": false,
+      "type": "image/webp",
+      "encoding": "lossless",
+      "src": "projects/task2_taxmind/taxmind-official-and-mini-program-qr.optimized.webp",
+      "bytes": 273262,
+      "variants": [
+        {
+          "src": "projects/task2_taxmind/taxmind-official-and-mini-program-qr.w360.webp",
+          "width": 360,
+          "bytes": 38502
+        },
+        {
+          "src": "projects/task2_taxmind/taxmind-official-and-mini-program-qr.w640.webp",
+          "width": 640,
+          "bytes": 92944
+        },
+        {
+          "src": "projects/task2_taxmind/taxmind-official-and-mini-program-qr.w960.webp",
+          "width": 960,
+          "bytes": 178792
+        },
+        {
+          "src": "projects/task2_taxmind/taxmind-official-and-mini-program-qr.optimized.webp",
+          "width": 1280,
+          "bytes": 273262
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "projects/task2_taxmind/taxmind_mini_program_home.jpg": {
+      "originalBytes": 270162,
+      "width": 942,
+      "height": 2048,
+      "alpha": false,
+      "type": "image/webp",
+      "encoding": "webp high quality",
+      "src": "projects/task2_taxmind/taxmind_mini_program_home.optimized.webp",
+      "bytes": 171898,
+      "variants": [
+        {
+          "src": "projects/task2_taxmind/taxmind_mini_program_home.w360.webp",
+          "width": 360,
+          "bytes": 44404
+        },
+        {
+          "src": "projects/task2_taxmind/taxmind_mini_program_home.w640.webp",
+          "width": 640,
+          "bytes": 96870
+        },
+        {
+          "src": "projects/task2_taxmind/taxmind_mini_program_home.optimized.webp",
+          "width": 942,
+          "bytes": 171898
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "projects/task2_taxmind/taxmind_mini_program_learning.jpg": {
+      "originalBytes": 186408,
+      "width": 942,
+      "height": 2048,
+      "alpha": false,
+      "type": "image/webp",
+      "encoding": "webp high quality",
+      "src": "projects/task2_taxmind/taxmind_mini_program_learning.optimized.webp",
+      "bytes": 148028,
+      "variants": [
+        {
+          "src": "projects/task2_taxmind/taxmind_mini_program_learning.w360.webp",
+          "width": 360,
+          "bytes": 37648
+        },
+        {
+          "src": "projects/task2_taxmind/taxmind_mini_program_learning.w640.webp",
+          "width": 640,
+          "bytes": 81060
+        },
+        {
+          "src": "projects/task2_taxmind/taxmind_mini_program_learning.optimized.webp",
+          "width": 942,
+          "bytes": 148028
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "projects/task2_taxmind/taxmind_official_account_home.jpg": {
+      "originalBytes": 237356,
+      "width": 942,
+      "height": 2048,
+      "alpha": false,
+      "type": "image/webp",
+      "encoding": "webp high quality",
+      "src": "projects/task2_taxmind/taxmind_official_account_home.optimized.webp",
+      "bytes": 188084,
+      "variants": [
+        {
+          "src": "projects/task2_taxmind/taxmind_official_account_home.w360.webp",
+          "width": 360,
+          "bytes": 53298
+        },
+        {
+          "src": "projects/task2_taxmind/taxmind_official_account_home.w640.webp",
+          "width": 640,
+          "bytes": 109594
+        },
+        {
+          "src": "projects/task2_taxmind/taxmind_official_account_home.optimized.webp",
+          "width": 942,
+          "bytes": 188084
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "projects/task2_taxmind/taxmind_official_account_post.jpg": {
+      "originalBytes": 342486,
+      "width": 1228,
+      "height": 2048,
+      "alpha": false,
+      "type": "image/webp",
+      "encoding": "webp high quality",
+      "src": "projects/task2_taxmind/taxmind_official_account_post.optimized.webp",
+      "bytes": 294824,
+      "variants": [
+        {
+          "src": "projects/task2_taxmind/taxmind_official_account_post.w360.webp",
+          "width": 360,
+          "bytes": 52550
+        },
+        {
+          "src": "projects/task2_taxmind/taxmind_official_account_post.w640.webp",
+          "width": 640,
+          "bytes": 116478
+        },
+        {
+          "src": "projects/task2_taxmind/taxmind_official_account_post.w960.webp",
+          "width": 960,
+          "bytes": 210416
+        },
+        {
+          "src": "projects/task2_taxmind/taxmind_official_account_post.optimized.webp",
+          "width": 1228,
+          "bytes": 294824
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "projects/task3_clio/clio_phone_01.png": {
+      "originalBytes": 1165650,
+      "width": 528,
+      "height": 2048,
+      "alpha": true,
+      "type": "image/webp",
+      "encoding": "webp high quality",
+      "src": "projects/task3_clio/clio_phone_01.optimized.webp",
+      "bytes": 161218,
+      "variants": [
+        {
+          "src": "projects/task3_clio/clio_phone_01.w360.webp",
+          "width": 360,
+          "bytes": 92666
+        },
+        {
+          "src": "projects/task3_clio/clio_phone_01.optimized.webp",
+          "width": 528,
+          "bytes": 161218
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "projects/task3_clio/clio_phone_02.png": {
+      "originalBytes": 1415353,
+      "width": 582,
+      "height": 2048,
+      "alpha": true,
+      "type": "image/webp",
+      "encoding": "webp high quality",
+      "src": "projects/task3_clio/clio_phone_02.optimized.webp",
+      "bytes": 200266,
+      "variants": [
+        {
+          "src": "projects/task3_clio/clio_phone_02.w360.webp",
+          "width": 360,
+          "bytes": 101820
+        },
+        {
+          "src": "projects/task3_clio/clio_phone_02.optimized.webp",
+          "width": 582,
+          "bytes": 200266
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "projects/task3_clio/clio_phone_03.png": {
+      "originalBytes": 1264507,
+      "width": 618,
+      "height": 2048,
+      "alpha": true,
+      "type": "image/webp",
+      "encoding": "webp high quality",
+      "src": "projects/task3_clio/clio_phone_03.optimized.webp",
+      "bytes": 230204,
+      "variants": [
+        {
+          "src": "projects/task3_clio/clio_phone_03.w360.webp",
+          "width": 360,
+          "bytes": 97028
+        },
+        {
+          "src": "projects/task3_clio/clio_phone_03.optimized.webp",
+          "width": 618,
+          "bytes": 230204
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "projects/task3_clio/clio_phone_04.png": {
+      "originalBytes": 983906,
+      "width": 737,
+      "height": 2048,
+      "alpha": true,
+      "type": "image/webp",
+      "encoding": "webp high quality",
+      "src": "projects/task3_clio/clio_phone_04.optimized.webp",
+      "bytes": 128662,
+      "variants": [
+        {
+          "src": "projects/task3_clio/clio_phone_04.w360.webp",
+          "width": 360,
+          "bytes": 49012
+        },
+        {
+          "src": "projects/task3_clio/clio_phone_04.w640.webp",
+          "width": 640,
+          "bytes": 110048
+        },
+        {
+          "src": "projects/task3_clio/clio_phone_04.optimized.webp",
+          "width": 737,
+          "bytes": 128662
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "projects/task3_clio/clio_phone_05.png": {
+      "originalBytes": 1029175,
+      "width": 525,
+      "height": 2048,
+      "alpha": true,
+      "type": "image/webp",
+      "encoding": "webp high quality",
+      "src": "projects/task3_clio/clio_phone_05.optimized.webp",
+      "bytes": 131802,
+      "variants": [
+        {
+          "src": "projects/task3_clio/clio_phone_05.w360.webp",
+          "width": 360,
+          "bytes": 76692
+        },
+        {
+          "src": "projects/task3_clio/clio_phone_05.optimized.webp",
+          "width": 525,
+          "bytes": 131802
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "signal.webp": {
+      "originalBytes": 119784,
+      "width": 510,
+      "height": 510,
+      "alpha": false,
+      "type": "image/webp",
+      "encoding": "original",
+      "src": "signal.webp",
+      "bytes": 119784,
+      "variants": [
+        {
+          "src": "signal.w360.webp",
+          "width": 360,
+          "bytes": 71726
+        },
+        {
+          "src": "signal.webp",
+          "width": 510,
+          "bytes": 119784
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "toolkit/axure-rp.webp": {
+      "originalBytes": 12260,
+      "width": 160,
+      "height": 160,
+      "alpha": true,
+      "type": "image/webp",
+      "encoding": "original",
+      "src": "toolkit/axure-rp.webp",
+      "bytes": 12260,
+      "variants": [
+        {
+          "src": "toolkit/axure-rp.webp",
+          "width": 160,
+          "bytes": 12260
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "toolkit/goview.webp": {
+      "originalBytes": 4722,
+      "width": 151,
+      "height": 111,
+      "alpha": true,
+      "type": "image/webp",
+      "encoding": "original",
+      "src": "toolkit/goview.webp",
+      "bytes": 4722,
+      "variants": [
+        {
+          "src": "toolkit/goview.webp",
+          "width": 151,
+          "bytes": 4722
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "toolkit/hbuilderx.webp": {
+      "originalBytes": 552,
+      "width": 65,
+      "height": 71,
+      "alpha": true,
+      "type": "image/webp",
+      "encoding": "original",
+      "src": "toolkit/hbuilderx.webp",
+      "bytes": 552,
+      "variants": [
+        {
+          "src": "toolkit/hbuilderx.webp",
+          "width": 65,
+          "bytes": 552
+        }
+      ],
+      "fallbackVariants": []
+    },
+    "toolkit/procreate.webp": {
+      "originalBytes": 7046,
+      "width": 160,
+      "height": 160,
+      "alpha": false,
+      "type": "image/webp",
+      "encoding": "original",
+      "src": "toolkit/procreate.webp",
+      "bytes": 7046,
+      "variants": [
+        {
+          "src": "toolkit/procreate.webp",
+          "width": 160,
+          "bytes": 7046
+        }
+      ],
+      "fallbackVariants": []
+    }
+  }
+}

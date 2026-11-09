@@ -181,6 +181,22 @@ function CopyEmail(button) {
   });
 }
 
+function LazyVideoPosters(videos) {
+  const show = (video) => { video.poster = video.dataset.lazyPoster; };
+  if (!('IntersectionObserver' in window)) {
+    videos.forEach(show);
+    return;
+  }
+  const observer = new IntersectionObserver((entries) => {
+    for (const { target, isIntersecting } of entries) {
+      if (!isIntersecting) continue;
+      show(target);
+      observer.unobserve(target);
+    }
+  }, { rootMargin: '1200px 0px' });
+  videos.forEach((video) => observer.observe(video));
+}
+
 Header(document.querySelector('#site-header'));
 const hero = document.querySelector('.hero');
 const about = document.querySelector('#about');
@@ -195,6 +211,7 @@ const gallery = document.querySelector('[data-gallery]');
 if (gallery) ProjectGallery(gallery);
 document.querySelectorAll('[data-board-gallery]').forEach(BoardCarousel);
 const workVideos = [...document.querySelectorAll('.graphic-viewport video')];
+LazyVideoPosters(workVideos.filter((video) => video.dataset.lazyPoster));
 for (const video of workVideos) {
   video.addEventListener('play', () => {
     for (const other of workVideos) if (other !== video) other.pause();

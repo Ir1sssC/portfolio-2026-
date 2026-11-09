@@ -8,7 +8,12 @@ export function CursorImageTrail(layer, images, { distance = 63, interval = 68, 
   function preload() {
     if (!pointer.matches || preloaded) return;
     preloaded = true;
-    for (const { src } of images) new Image().src = src;
+    for (const { src } of images) {
+      const preview = new Image();
+      preview.fetchPriority = 'low';
+      preview.decoding = 'async';
+      preview.src = src;
+    }
   }
 
   hero.addEventListener('pointerenter', preload);

@@ -8,6 +8,12 @@
 
 ## 替换内容
 
+图片加载已使用本地 WebP / AVIF、响应式尺寸与延迟加载，所有原图及原地址仍保留。详见[完整体积对比和检查结果](docs/image-optimization-report.md)。
+
+- 常规构建：`node build.mjs`。
+- 检查图片与页面路径：`node scripts/check-image-assets.mjs`。
+- 添加新素材后，可使用支持 WebP / AVIF 的 Pillow 运行 `python scripts/optimize-images.py`，再执行构建。派生图片已提交，Vercel 不需要安装 Pillow 或调用图片服务。
+
 - 在 `dist/js/content.mjs` 修改姓名、介绍、联系信息、履历、常见问题以及图片轨迹配置。
 - 将简历 PDF 放到 `dist/assets/`，在 `profile.resumeUrl` 填写相对于 `dist/` 的路径。构建时确认文件存在后，联系区才会显示下载入口。
 - 在 `dist/js/works-data.mjs` 管理作品、分类、媒体和原型。将项目截图和封面放到 `dist/assets/`。图片可填写 `{ src, alt, width, height, caption }`，其中 `src` 相对于 `dist/assets/`。

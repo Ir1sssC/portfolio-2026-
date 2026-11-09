@@ -11,6 +11,10 @@ const nav = [['works', '精选作品'], ['about', '关于我'], ['experience', '
 const homeNav = [['about', '关于我'], ['works', '作品'], ['experience', '经历'], ['contact', '联系']];
 const index = (number, label) => `<div class="section-index micro"><span>${number} /</span> ${label}</div>`;
 const aboutGraphic = await readFile(new URL('./dist/assets/profile-graphic.svg', import.meta.url), 'utf8');
+const imageManifest = JSON.parse(await readFile(new URL('./dist/assets/image-manifest.json', import.meta.url), 'utf8')).images;
+const fullImageSizes = '(max-width: 690px) calc(100vw - 42px), (min-width: 1440px) 1312px, calc(100vw - clamp(48px, 8.9vw, 144px))';
+const columnImageSizes = (columns = 2, mobile = 580) => `(max-width: ${mobile}px) calc(100vw - 42px), (max-width: 690px) calc((100vw - 62px) / ${Math.min(columns, 2)}), (max-width: 880px) calc((100vw - clamp(48px, 8.9vw, 144px) - 20px) / ${Math.min(columns, 2)}), (min-width: 1440px) ${Math.ceil((1312 - (columns - 1) * 32) / columns)}px, calc((100vw - clamp(48px, 8.9vw, 144px) - clamp(${(columns - 1) * 20}px, ${(columns - 1) * 2.25}vw, ${(columns - 1) * 32}px)) / ${columns})`;
+const splitImageSizes = (ratio, mobile = 690) => `(max-width: ${mobile}px) calc(100vw - 42px), (min-width: 1440px) ${Math.ceil(1280 * ratio)}px, calc((100vw - clamp(48px, 8.9vw, 144px) - clamp(20px, 2.25vw, 32px)) * ${ratio})`;
 const resumeAvailable = profile.resumeUrl && await stat(new URL(`./dist/${profile.resumeUrl}`, import.meta.url)).then(
   (file) => file.isFile(),
   () => false,
@@ -38,7 +42,7 @@ function DraggableBadge() {
       <span class="badge-ring" aria-hidden="true"></span><span class="badge-clasp" aria-hidden="true"></span>
       <span class="badge-slot" aria-hidden="true"></span>
       <span class="badge-heading"><span class="badge-name"><span>${esc(profile.chineseName)}</span> <span class="badge-name-en" lang="en">${esc(profile.englishName)}</span></span><span class="badge-id">个人档案<br>编号 001</span></span>
-      <span class="badge-body"><img src="${esc(profile.badgePhoto)}" alt="${esc(profile.badgePhotoAlt)}" width="1080" height="720" draggable="false" fetchpriority="high"></span>
+      <span class="badge-body">${MediaImage({ src: profile.badgePhoto, alt: profile.badgePhotoAlt, width: 1080, height: 720 }, '', '', { priority: true, sizes: '250px', draggable: false })}</span>
       <span class="badge-bottom"><span class="barcode" aria-hidden="true"></span><span>创意设计</span><span class="badge-emblem">${mark}</span></span>
     </button>
   </div>`;
@@ -68,17 +72,24 @@ const countWorks = (entries) => entries.reduce((count, entry) =>
   count + (entry.category === 'photography' ? (entry.images?.length ?? 0) : 1), 0);
 const pending = (label) => `<p class="work-pending micro">${esc(label)}</p>`;
 
-function MediaImage(image, root = '', folder = 'assets/') {
+function MediaImage(image, root = '', folder = 'assets/', options = {}) {
   const size = image.width && image.height ? ` width="${esc(image.width)}" height="${esc(image.height)}"` : '';
-  return `<img src="${root}${folder}${esc(image.src)}" alt="${esc(image.alt ?? '')}"${size} loading="lazy" decoding="async">`;
+  const original = `${folder}${image.src}`;
+  const optimized = imageManifest[original.replace(/^assets\//, '')];
+  const fallback = optimized?.fallbackVariants?.length ? ` srcset="${optimized.fallbackVariants.map((variant) => `${root}assets/${esc(variant.src)} ${variant.width}w`).join(', ')}" sizes="${esc(options.sizes ?? fullImageSizes)}"` : '';
+  const imageTag = `<img src="${root}${esc(original)}"${fallback} alt="${esc(image.alt ?? '')}"${size} loading="${options.priority ? 'eager' : 'lazy'}" decoding="async"${options.priority ? ' fetchpriority="high"' : ''}${options.draggable === false ? ' draggable="false"' : ''}>`;
+  if (!optimized) return imageTag;
+  const candidates = optimized.variants.map((variant) => `${root}assets/${esc(variant.src)} ${variant.width}w`).join(', ');
+  return `<picture><source type="${esc(optimized.type)}" srcset="${candidates}" sizes="${esc(options.sizes ?? fullImageSizes)}">${imageTag}</picture>`;
 }
 
-function ImageLink(image, root = '') {
-  return `<a class="image-enlarge" href="${root}assets/${esc(image.src)}" data-image-open target="_blank" rel="noopener noreferrer" aria-label="放大查看${esc(image.alt)}">${MediaImage(image, root)}</a>`;
+function ImageLink(image, root = '', options = {}) {
+  return `<a class="image-enlarge" href="${root}assets/${esc(image.src)}" data-image-open target="_blank" rel="noopener noreferrer" aria-label="放大查看${esc(image.alt)}">${MediaImage(image, root, 'assets/', options)}</a>`;
 }
 
 function ProjectCover(project) {
-  return MediaImage(project.cover);
+  const sizes = splitImageSizes(project.slug === 'niteoff' ? 7 / 12 : 5 / 12);
+  return MediaImage(project.cover, '', 'assets/', { sizes });
 }
 
 function ProjectCard(project, number) {
@@ -96,7 +107,7 @@ function DemoProject(project, number) {
   const attributes = `data-video-src="assets/${esc(project.video.src)}" data-video-poster="assets/${esc(project.cover.src)}" data-video-title="${esc(project.title)}"`;
   return `<article class="demo-project" aria-labelledby="${esc(project.slug)}-title">
     <button class="demo-cover" type="button" ${attributes} aria-label="观看${esc(project.title)}项目演示">
-      ${MediaImage(project.cover)}<span class="demo-play" aria-hidden="true">▷</span>
+      ${MediaImage(project.cover, '', 'assets/', { sizes: splitImageSizes(7 / 12) })}<span class="demo-play" aria-hidden="true">▷</span>
     </button>
     <div class="demo-copy">
       <div class="project-meta micro"><span>${pad(number)} / Web 开发与数据可视化</span><span>${esc(project.year)}</span></div>
@@ -117,7 +128,7 @@ function LiveProject(project, number) {
       <div class="live-project-summary"><p>${esc(project.description)}</p>
         <a class="prototype-link live-prototype-link" href="${esc(project.prototypeUrl)}" target="_blank" rel="noopener noreferrer" aria-label="体验 RoomieBoard 合租协作看板原型，在新标签页打开">体验原型 ${arrow()}</a></div>
     </header>
-    <div class="live-project-images" data-image-gallery>${project.images.map((image, i) => `<figure>${ImageLink(image)}<figcaption class="micro">${i === 0 ? '01 / 房源详情与多维评估' : '02 / 室友意见与看房清单'}<span>线上界面截图</span></figcaption></figure>`).join('')}</div>
+    <div class="live-project-images" data-image-gallery>${project.images.map((image, i) => `<figure>${ImageLink(image, '', { sizes: splitImageSizes(i === 0 ? 7 / 12 : 5 / 12, 580) })}<figcaption class="micro">${i === 0 ? '01 / 房源详情与多维评估' : '02 / 室友意见与看房清单'}<span>线上界面截图</span></figcaption></figure>`).join('')}</div>
   </article>`;
 }
 
@@ -131,7 +142,7 @@ function TaxMindProject(project, number) {
       ${ProjectTags(project.tools)}
     </div>
     <div class="taxmind-media" data-image-gallery aria-label="TaxMind 小程序与公众号展示">
-      <div class="taxmind-screens">${project.images.map((image) => `<figure><figcaption class="micro">${esc(image.caption)}</figcaption>${ImageLink(image)}</figure>`).join('')}</div>
+      <div class="taxmind-screens">${project.images.map((image) => `<figure><figcaption class="micro">${esc(image.caption)}</figcaption>${ImageLink(image, '', { sizes: columnImageSizes(4) })}</figure>`).join('')}</div>
       <p class="micro taxmind-zoom-hint">点击图片查看大图</p>
     </div>
   </article>`;
@@ -141,15 +152,15 @@ function StickerProject(project, number) {
   const titleId = `graphic-${esc(project.slug)}`;
   return `<article class="brand-project ip-project" aria-labelledby="${titleId}"><div class="brand-panel" data-presentation="ip-board">
     <div class="ip-intro"><span class="micro">${pad(number)} / ${esc(project.kind)}</span><h4 id="${titleId}">${esc(project.title).replace('》', '》<br>')}</h4>
-      <p>${esc(project.description)}</p><figure class="ip-character">${MediaImage(project.character)}</figure>
+      <p>${esc(project.description)}</p><figure class="ip-character">${MediaImage(project.character, '', 'assets/', { sizes: '330px' })}</figure>
     </div>
-    <div class="ip-stickers" data-image-gallery>${project.gallery.map((image) => `<figure>${ImageLink(image)}</figure>`).join('')}</div>
+    <div class="ip-stickers" data-image-gallery>${project.gallery.map((image) => `<figure>${ImageLink(image, '', { sizes: columnImageSizes(6) })}</figure>`).join('')}</div>
   </div></article>`;
 }
 
 function GalleryVideo(video) {
   const captions = video.captions ? `<track kind="captions" srclang="zh" label="中文字幕" src="assets/${esc(video.captions)}">` : '';
-  return `<video controls playsinline muted preload="none" width="${esc(video.width)}" height="${esc(video.height)}" src="assets/${esc(video.src)}" poster="assets/${esc(video.poster)}" aria-label="${esc(video.caption)}">${captions}</video>`;
+  return `<video controls playsinline muted preload="none" width="${esc(video.width)}" height="${esc(video.height)}" src="assets/${esc(video.src)}" data-lazy-poster="assets/${esc(video.poster)}" aria-label="${esc(video.caption)}">${captions}</video>`;
 }
 
 function GalleryProject(project, number) {
@@ -158,6 +169,7 @@ function GalleryProject(project, number) {
   const scrollable = media.length > 1 && project.presentation !== 'editorial';
   const viewportId = `${titleId}-images`;
   const metadata = [project.tools?.join('、'), project.location, project.year].filter(Boolean).join(' · ');
+  const gallerySizes = project.galleryLayout === 'photos' ? `(max-width: 580px) calc(100vw - 42px), (max-width: 880px) 640px, ${columnImageSizes(3)}` : media.length === 1 ? fullImageSizes : columnImageSizes(3);
   return `<article class="graphic-project"${project.presentation === 'editorial' ? ' data-presentation="editorial"' : ''} aria-labelledby="${titleId}">
     <div class="graphic-intro">
       <span class="micro">${pad(number)} / ${esc(project.kind)}</span>
@@ -175,7 +187,7 @@ function GalleryProject(project, number) {
       </div>` : ''}${media.length ? `<div class="graphic-viewport" id="${viewportId}"${scrollable ? ` data-board-viewport tabindex="0" role="region" aria-labelledby="${titleId}" aria-describedby="${titleId}-hint"` : ''}>
         ${media.map((item) => {
           const ratio = project.galleryLayout === 'photos' ? ` style="--photo-ratio: ${item.width / item.height}"` : '';
-          return `<figure data-board-slide${ratio}>${item.poster ? GalleryVideo(item) : MediaImage(item)}${item.caption ? `<figcaption class="micro">${esc(item.caption)}</figcaption>` : ''}</figure>`;
+          return `<figure data-board-slide${ratio}>${item.poster ? GalleryVideo(item) : MediaImage(item, '', 'assets/', { sizes: gallerySizes })}${item.caption ? `<figcaption class="micro">${esc(item.caption)}</figcaption>` : ''}</figure>`;
         }).join('')}
       </div>` : pending('作品待补充')}
     </div>
@@ -193,7 +205,10 @@ function BrandProject(project, number) {
         <p>${esc(project.stackIntro?.description ?? project.description)}</p>${project.galleryNote ? `<p class="micro">${esc(project.galleryNote)}</p>` : ''}${project.caseLayout === 'poster-series' ? `<p class="micro" lang="en">${esc(project.englishName)}<br>${esc(project.year)}</p><p class="micro" lang="en">${esc(project.tagline)}</p><a class="prototype-link" href="projects/${esc(project.slug)}/index.html">查看完整作品 ${arrow()}</a>` : ''}
       </div>
       <div class="brand-images" data-brand-layout="${esc(project.galleryLayout ?? 'default')}"${project.imageLinks ? ' data-image-gallery' : ''}>
-        ${(project.previewImages ?? project.gallery).map((item) => `<figure>${project.imageLinks ? ImageLink(item) : MediaImage(item)}${item.caption ? `<figcaption class="micro">${esc(item.caption)}</figcaption>` : ''}</figure>`).join('')}
+        ${(project.previewImages ?? project.gallery).map((item, i) => {
+          const sizes = project.caseLayout === 'poster-series' && i === 0 ? `(max-width: 580px) calc(100vw - 42px), (max-width: 880px) calc((100vw - 84px) * .67), ${columnImageSizes(2)}` : columnImageSizes(['campaign', 'clio-five'].includes(project.galleryLayout) ? 3 : 2);
+          return `<figure>${project.imageLinks ? ImageLink(item, '', { sizes }) : MediaImage(item, '', 'assets/', { sizes })}${item.caption ? `<figcaption class="micro">${esc(item.caption)}</figcaption>` : ''}</figure>`;
+        }).join('')}
       </div>
     </div>
   </article>`;
@@ -324,10 +339,11 @@ function CoverCrop(cover) {
 
 function MediaGallery(images, label, visualLayout, interactive = false) {
   if (!images?.length) return pending(label);
-  return `<div class="case-media-grid"${visualLayout ? ` data-visual-layout="${esc(visualLayout)}"` : ''}${interactive ? ' data-image-gallery' : ''}>${images.map((image) => {
-    const media = MediaImage(image, '../../');
+  return `<div class="case-media-grid"${visualLayout ? ` data-visual-layout="${esc(visualLayout)}"` : ''}${interactive ? ' data-image-gallery' : ''}>${images.map((image, i) => {
+    const options = { priority: i === 0, sizes: images.length === 1 ? fullImageSizes : columnImageSizes(visualLayout === 'stickers' ? 4 : ['campaign', 'clio-five'].includes(visualLayout) ? 3 : 2, 690) };
+    const media = interactive ? ImageLink(image, '../../', options) : MediaImage(image, '../../', 'assets/', options);
     const caption = image.caption ? `<figcaption class="micro">${esc(image.caption)}</figcaption>` : '';
-    return `<figure>${interactive ? ImageLink(image, '../../') : visualLayout ? `<a href="../../assets/${esc(image.src)}" target="_blank" rel="noopener noreferrer" aria-label="查看大图：${esc(image.caption ?? image.alt)}">${media}</a>` : media}${caption}</figure>`;
+    return `<figure>${interactive ? media : visualLayout ? `<a href="../../assets/${esc(image.src)}" target="_blank" rel="noopener noreferrer" aria-label="查看大图：${esc(image.caption ?? image.alt)}">${media}</a>` : media}${caption}</figure>`;
   }).join('')}</div>`;
 }
 
@@ -347,7 +363,7 @@ function ProductCase(project) {
   </section>
   <section class="case-block" id="prototype"><h2>${esc(project.showcase.title)}</h2><p class="micro case-eyebrow" lang="en">${esc(project.showcase.english)}</p>
     <figure class="compact-showcase${project.showcase.image ? ' compact-board' : ''}" data-image-gallery>
-      ${project.showcase.image ? `<a class="image-enlarge" href="../../assets/${esc(image.src)}" data-image-open aria-label="放大查看 Campus+ 完整项目展板">${MediaImage(image, '../../')}</a>` : MediaImage(image, '../../')}${project.showcase.caption ? `<figcaption>${esc(project.showcase.caption)}</figcaption>` : ''}
+      ${project.showcase.image ? `<a class="image-enlarge" href="../../assets/${esc(image.src)}" data-image-open aria-label="放大查看 Campus+ 完整项目展板">${MediaImage(image, '../../', 'assets/', { priority: true })}</a>` : MediaImage(image, '../../', 'assets/', { priority: true })}${project.showcase.caption ? `<figcaption>${esc(project.showcase.caption)}</figcaption>` : ''}
     </figure>
   </section>`;
 }
@@ -357,7 +373,7 @@ function PosterCase(project) {
     <div class="case-prose">${project.concept.map((paragraph) => `<p>${esc(paragraph)}</p>`).join('')}</div>
   </section>
   <section class="case-block"><h2>系列海报</h2><p class="micro case-eyebrow" lang="en">Poster Gallery</p>
-    <div class="poster-gallery" data-image-gallery>${project.gallery.map((image) => `<figure><a class="image-enlarge" href="../../assets/${esc(image.src)}" data-image-open aria-label="放大查看${esc(image.caption)}">${MediaImage(image, '../../')}</a><figcaption class="micro">${esc(image.caption)}</figcaption></figure>`).join('')}</div>
+    <div class="poster-gallery" data-image-gallery>${project.gallery.map((image, i) => `<figure><a class="image-enlarge" href="../../assets/${esc(image.src)}" data-image-open aria-label="放大查看${esc(image.caption)}">${MediaImage(image, '../../', 'assets/', { priority: i === 0, sizes: i === 0 ? '(max-width: 690px) calc(100vw - 42px), 740px' : columnImageSizes(2, 690) })}</a><figcaption class="micro">${esc(image.caption)}</figcaption></figure>`).join('')}</div>
   </section>`;
 }
 
